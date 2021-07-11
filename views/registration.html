@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="icon" href="/images/logo/tablogo.png">
+    <title>Registration</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/form.css'>
+</head>
+
+<body>
+    <div id="formContainer">
+        <div id="imgbx" class="fc-class">
+            <img src="/images/logo/tablogo.png" alt="">
+        </div>
+        <div id="content" class="fc-class">
+            
+            <form action="/auth/registered" method="post">
+                <h3>Signup</h3>
+                <input type="text" placeholder="Name" id="name" name="name">
+                <input type="text" placeholder="Email" id="email" name="email">
+                <input type="number" placeholder="Mobile" id="mobile" name="mobile">
+                <input type="text" placeholder="Branch" id="branch" name="branch">
+                <input type="number" placeholder="Year" id="year" name="year"><br><br>
+                <label for="domain">Domain&nbsp</label>
+                <select name="domain" id="domain">
+                    <option value="null">--Select--</option>
+                    <optgroup label="Hardware">
+                        <option value="VLSI">VLSI</option>
+                        <option value="Embeded System">Embeded System</option>
+                        <option value="PCB Design">PCB Design</option>
+                    </optgroup>
+                    <optgroup label="Software">
+                        <option value="CP">Competitive Programming</option>
+                        <option value="web dev">Web Development</option>
+                        <option value="app dev">App Development</option>
+                        <option value="ML">Machine Learning</option>
+                    </optgroup>
+                    <optgroup label="Design">
+                        <option value="UI/UX">UI/UX Design</option>
+                        <option value="poster">Poster Design</option>
+                    </optgroup>
+                    
+                </select><br><br>
+                <input type="password" placeholder="Password" name="pass" id="pass">
+                <input type="text" placeholder="Confirm Password" name="cpass" id="cpass">
+                <button type="submit" name="submit" id=submit>Submit</button>
+                <p>Already have an account?&nbsp&nbsp<a href="/login">Login</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
